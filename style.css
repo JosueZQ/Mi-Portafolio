@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+:root{
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover-primario:#272727;
+    --color-hover-secundario:#1a96b1;
+
+    --fuente-titulos: "Krona One", sans-serif;
+    --fuente-textos: "Montserrat", sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+    .encabezado{
+        margin: 0px 0% 80px 0%;
+    }
+
+        .encabezado_menu{
+            display: flex;
+            flex-direction: row;
+            margin: 65px 0% 0px 8%;
+            gap: 80px;
+        }
+
+            .encabezado_menu_boton{
+                display: flex;
+                background-color: var(--color-primario);
+                color: var(--color-terciario);
+                text-align: center; 
+                border: none;
+                font-family: var(--fuente-textos);
+                font-weight: 600;
+                font-size: 1.5rem;
+                text-decoration: none;
+            }
+
+                .encabezado_menu_boton:hover{
+                    color: #1a96b1;
+                }
+
+    .presentacion {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0% 50px 0% 5%;
+    }
+
+        .presentacion_contenido{
+            width: 50%;
+            margin: 0px 5% 110px 0%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /*Esta es la forma brindada en el curso aunque creo que la mí es más flexible*/
+        }
+
+            .presentacion_contenido_titulo{
+                font-size: 2.25rem;
+                font-family: var(--fuente-titulos);
+            }    
+            
+                .presentacion_contenido_titulo_destaque {
+                    color: var(--color-terciario); 
+                }
+            
+            .presentacion_contenido_subtitulo{
+                font-size: 2rem;
+                color: var(--color-hover-secundario);
+                font-family: var(--fuente-textos);
+            }
+
+            .presentacion_contenido_texto{
+                font-size: 1.5rem;
+                font-family: var(--fuente-textos);
+                /*margin: 8% 2% 8% 0%; Esta es mi forma*/
+            }
+
+            .presentacion_contenido_enlaces{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
+            }
+
+                .presentacion_contenido_enlaces_links{
+                    width: 50%;
+                    color: #F6F6F6;
+                    background-color: var(--color-primario);
+                    padding: 21.5px;
+                    border: 2px solid var(--color-terciario);
+                    border-radius: 8px;
+                    font-size: 1.5rem;
+                    font-family: var(--fuente-textos);
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                }
+
+                    .presentacion_contenido_enlaces_links_JS{
+                        width: 100%;
+                        color: #F6F6F6;
+                        background-color: var(--color-primario);
+                        padding: 0px;
+                        border: 2px solid var(--color-terciario);
+                        border-radius: 8px;
+                        font-size: 1.5rem;
+                        font-family: var(--fuente-textos);
+                        font-weight: 600;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+    
+                    }
+
+                    .presentacion_contenido_enlaces_links:hover {
+                        background-color: #272727;
+                    }
+
+                    .presentacion_contenido_enlaces_links_JS:hover {
+                        background-color: #272727;
+                    }
+
+                .presentacion_contenidos_enlaces_subtitulo{
+                    font-family: var(--fuente-titulos);
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+        
+        .contenido_imagen_home_y_sobremi{
+            border: 3px solid var(--color-terciario); 
+            border-top-style: dashed;
+            border-right-style: dashed;
+            border-radius: 8%;
+            padding: 20px 20px 0px 0px;
+            margin: 0% 0% 5% 0%;
+            width: 40%;
+        }
+
+        .presentacion_imagen_portafolio{
+            margin: 150px 0% 5% 0%;
+            border: 3px solid var(--color-terciario); 
+            border-radius: 8px;
+            padding: 0%;
+            width: 50%;
+        }
+
+    .subtexto{
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 23.64px;
+        background-color: var(--color-terciario);
+        color: var(--color-primario);
+    }
+
+@media(max-width: 1200px){
+    .encabezado{
+        margin: 138px 0% 120px 0%;
+    }
+        .encabezado_menu{
+            justify-content: center;
+            margin: 65px 0% 0px 0px;
+            gap: 80px;
+        }
+
+
+    .presentacion{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 40px;
+    }
+
+    .presentacion_contenido{
+        text-align: center;
+        margin: 0px 0% 110px 0%;
+        width: auto;
+    }
+}

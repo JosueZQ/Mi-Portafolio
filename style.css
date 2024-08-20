@@ -173,12 +173,15 @@ body{
     .encabezado{
         margin: 138px 0% 120px 0%;
     }
-        .encabezado_menu{
+         .encabezado_menu{
             justify-content: center;
             margin: 65px 0% 0px 0px;
-            gap: 80px;
+            gap: 8%;
         }
-
+        
+        .encabezado_menu_boton{
+            font-size: 1rem;
+        }
 
     .presentacion{
         flex-direction: column-reverse;
